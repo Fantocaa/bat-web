@@ -5,31 +5,27 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Image from "next/image";
 
 export default function Faq() {
   return (
     <>
-      <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 lg:pt-24">
-        {/* <p
-          className="bg-slate-50 p-2 px-4 inline-block rounded-full text-blueatm-900 font-medium w-fit"
-          data-aos="zoom-in-up"
-          data-aos-delay="200"
-        >
-          💁‍♂️ FAQ&apos;s
-        </p> */}
+      <div className="container py-8 sm:py-12 lg:py-16 lg:pt-24">
         <div className="grid md:grid-cols-2 pt-8">
           <div>
             <h1 className="text-5xl font-semibold leading-tight">
               Apa yang ingin Anda tanyakan pada kami?
             </h1>
+            <Image
+              src="/images/pngegggh (3) 1.png"
+              alt="box"
+              width={1280}
+              height={1280}
+              className="-translate-x-32 2xl:-translate-x-24 pt-8"
+            />
           </div>
           <div>
-            <Accordion
-              type="single"
-              collapsible
-              defaultValue="item-1"
-              className="text-xl"
-            >
+            <Accordion type="single" collapsible defaultValue="item-1">
               <AccordionItem value="item-1">
                 <AccordionTrigger>Is it accessible?</AccordionTrigger>
                 <AccordionContent>

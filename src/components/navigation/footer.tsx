@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { Separator } from "@/components/ui/separator";
+import { ArrowUpRight } from "lucide-react";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -8,12 +10,27 @@ export default function Footer() {
     { id: 1, name: "Home", path: "/" },
     { id: 2, name: "About", path: "/about" },
     { id: 3, name: "Services", path: "/services" },
+    { id: 4, name: "Contact", path: "/contact" },
   ];
 
   return (
     <>
       <footer className="bg-white">
-        <div className="mx-auto max-w-screen-xl px-4 pb-6 pt-16 sm:px-6 lg:px-8 lg:pt-24">
+        <div className="container pb-6 pt-16 lg:pt-24">
+          <>
+            <div className="flex justify-between items-center">
+              <h1 className="text-6xl max-w-2xl leading-tight font-medium">
+                Let’s Start with us in Shipping your goods!
+              </h1>
+              <Link href="/contact">
+                <div className="bg-slate-50 rounded-2xl">
+                  <ArrowUpRight size={128} className="text-bluebat-500" />
+                </div>
+              </Link>
+            </div>
+            <Separator className="w-full my-12" />
+          </>
+
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="flex justify-center sm:justify-start">

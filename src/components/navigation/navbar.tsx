@@ -43,6 +43,7 @@ const NavLinks = [
   { id: 1, name: "Home", path: "/" },
   { id: 2, name: "About", path: "/about" },
   { id: 3, name: "Services", path: "/services" },
+  { id: 4, name: "Contact", path: "/contact" },
   // { id: 4, name: "Tracking", path: "/tracking" },
 ];
 
@@ -178,7 +179,7 @@ const Navbar = () => {
                       </Link>
                     </NavigationMenuItem>
                   ))}
-                  <NavigationMenuItem>
+                  {/* <NavigationMenuItem>
                     <NavigationMenuTrigger className="font-medium bg-transparent text-darkpint">
                       Location
                     </NavigationMenuTrigger>
@@ -193,18 +194,20 @@ const Navbar = () => {
                         ))}
                       </ul>
                     </NavigationMenuContent>
-                  </NavigationMenuItem>
+                  </NavigationMenuItem> */}
                   {/* Menambahkan "Careers" setelah "Location" */}
-                  <NavigationMenuItem className="hover:bg-slate-50">
-                    <Link
-                      href="https://karier.tako.co.id/"
-                      passHref
-                      target="__blank"
-                    >
-                      <h1 className="font-medium text-sm bg-transparent text-darkpint ">
-                        Careers
-                      </h1>
-                    </Link>
+                  <NavigationMenuItem>
+                    <Button className="bg-white shadow-none hover:bg-slate-50">
+                      <Link
+                        href="https://karier.tako.co.id/"
+                        // passHref
+                        target="__blank"
+                      >
+                        <h1 className="font-medium text-sm bg-transparent text-darkpint ">
+                          Careers
+                        </h1>
+                      </Link>
+                    </Button>
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
@@ -302,7 +305,7 @@ const Navbar = () => {
                       Services
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <details className="group [&_summary::-webkit-details-marker]:hidden">
                       <summary className="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
                         <span className="text-sm font-medium"> Location </span>
@@ -343,7 +346,7 @@ const Navbar = () => {
                         </li>
                       </ul>
                     </details>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="https://karier.tako.co.id/"
