@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -83,7 +81,7 @@ export default function Footer() {
                       </svg>
 
                       <span className="flex-1 text-gray-700">
-                        marketing@atmtrans.id
+                        marketing@bat.id
                       </span>
                     </div>
                   </li>
@@ -105,8 +103,10 @@ export default function Footer() {
                         />
                       </svg>
                       <div className="flex-1">
-                        <span className="flex text-gray-700">031 3537 968</span>
-                        <span className="flex text-gray-700">031-3537 981</span>
+                        <span className="flex text-gray-700">
+                          +62 81 280 578 717
+                        </span>
+                        {/* <span className="flex text-gray-700">031-3537 981</span> */}
                       </div>
                     </div>
                   </li>

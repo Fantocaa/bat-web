@@ -169,7 +169,7 @@ const Navbar = () => {
                         <NavigationMenuLink
                           className={`${navigationMenuTriggerStyle()} ${
                             isActive(link.path)
-                              ? "active bg-blue-500 hover:bg-blue-600 font-semibold text-white hover:text-white"
+                              ? "active bg-bluebat-500 hover:bg-bluebat-600 font-semibold text-white hover:text-white"
                               : "font-medium bg-transparent text-darkpint"
                           }`}
                         >

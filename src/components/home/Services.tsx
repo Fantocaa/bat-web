@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { Button } from "../ui/button";
+import Image from "next/image";
 
 export default function Services() {
   return (
@@ -11,13 +12,10 @@ export default function Services() {
         <div className="container py-16">
           <div className="relative lg:flex lg:items-center justify-between pb-16">
             <div className="text-left ltr:sm:text-left rtl:sm:text-right max-w-xl ">
-              {/* <h3>PT. PINT INDONESIA LOGISTIK</h3> */}
-              <h1 className="text-3xl font-extrabold sm:text-5xl max-w-md">
-                {/* <span className="text-bluepint-500 leading-tight">Handle</span> your{" "}
-            <span className="text-redpint-500">Logistic</span> with{" "}
-            <span className="text-bluepint-500">Care</span> */}
+              <h1 className="text-3xl font-bold sm:text-5xl max-w-md">
                 <span className="leading-tight text-darkpint">
-                  Your Better Option for Shipping
+                  Your <span className="text-bluebat-500">Better Option</span>{" "}
+                  for <span className="text-bluebat-500">Shipping</span>
                 </span>
               </h1>
             </div>
@@ -28,18 +26,55 @@ export default function Services() {
                 best!
               </h1>
               <div className="flex gap-4 pt-4">
-                {/* <Button className="rounded-full">Get Started</Button> */}
                 <Link href="/about">
-                  <Button className="rounded-full">Explore Our Services</Button>
+                  <Button className="rounded-full bg-bluebat-500 hover:bg-bluebat-600">
+                    Explore Our Services
+                  </Button>
                 </Link>
               </div>
             </div>
           </div>
           <div className="grid grid-cols-4 gap-4 z-10 relative">
-            <div className="p-8 bg-white rounded-2xl">Jalur Udara</div>
-            <div className="p-8 bg-white rounded-2xl">Jalur Laut</div>
-            <div className="p-8 bg-white rounded-2xl">Jalur Darat</div>
-            <div className="p-8 bg-white rounded-2xl">Export Import</div>
+            <div className="p-8 bg-white rounded-2xl hover:bg-bluebat-500 transition-all duration-200 flex flex-col items-center text-bluebat-500 hover:text-white">
+              <Image
+                src="/images/Group 11.svg"
+                alt="udara"
+                width={64}
+                height={64}
+                className="pb-6"
+              />
+              <h1 className="text-2xl font-semibold">Jalur Udara</h1>
+            </div>
+            <div className="p-8 bg-white rounded-2xl hover:bg-bluebat-500 transition-all duration-200 flex flex-col items-center text-bluebat-500 hover:text-white">
+              <Image
+                src="/images/Group 121.svg"
+                alt="udara"
+                width={64}
+                height={64}
+                className="pb-6"
+              />
+              <h1 className="text-2xl font-semibold">Jalur Laut</h1>
+            </div>
+            <div className="p-8 bg-white rounded-2xl hover:bg-bluebat-500 transition-all duration-200 flex flex-col items-center text-bluebat-500 hover:text-white">
+              <Image
+                src="/images/Group 9.svg"
+                alt="udara"
+                width={64}
+                height={64}
+                className="pb-6"
+              />
+              <h1 className="text-2xl font-semibold">Export Import</h1>
+            </div>
+            <div className="p-8 bg-white rounded-2xl hover:bg-bluebat-500 transition-all duration-200 flex flex-col items-center text-bluebat-500 hover:text-white">
+              <Image
+                src="/images/Group 10.svg"
+                alt="udara"
+                width={64}
+                height={64}
+                className="pb-6"
+              />
+              <h1 className="text-2xl font-semibold">Jalur Darat</h1>
+            </div>
           </div>
         </div>
       </div>

@@ -12,8 +12,7 @@ export default function Header() {
 
       <div className="relative mx-auto container py-16 pt-32 lg:flex lg:items-center justify-between z-10">
         <div className="text-left ltr:sm:text-left rtl:sm:text-right max-w-xl">
-          {/* <h3>PT. PINT INDONESIA LOGISTIK</h3> */}
-          <h1 className="text-3xl font-extrabold sm:text-5xl w-72 md:w-full">
+          <h1 className="text-3xl font-bold sm:text-5xl w-72 md:w-full">
             <span className="leading-tight text-darkpint">
               Same-Day? Next-Day? We Deliver on Your Timeframe
             </span>
@@ -25,9 +24,10 @@ export default function Header() {
             your package must be safe!
           </h1>
           <div className="flex gap-4 pt-4">
-            {/* <Button className="rounded-full">Get Started</Button> */}
             <Link href="/about">
-              <Button className="rounded-full">Explore About Us</Button>
+              <Button className="rounded-full bg-bluebat-500 hover:bg-bluebat-600">
+                Explore About Us
+              </Button>
             </Link>
           </div>
         </div>

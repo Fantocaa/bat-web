@@ -29,8 +29,8 @@ export default function Cta() {
             </div>
 
             <div className="absolute max-w-sm right-32 top-24">
-              <h1 className="text-4xl font-bold">
-                Pertanyaan anda tidak tercantum di FAQ&apos;s?{" "}
+              <h1 className="text-4xl font-bold leading-tight">
+                Contact Us for Logistics Solutions
               </h1>
               <p className="py-4">
                 Jika Anda belum puas dengan FAQ&apos;s kami, Anda bisa hubungi
@@ -38,7 +38,7 @@ export default function Cta() {
               </p>
               <Button
                 variant="default"
-                className="py-3 mt-8 bg-white hover:bg-white hover:bg-opacity-75 rounded-full flex gap-2 transition-all w-fit text-bluebg-blue-600"
+                className="py-3 mt-4 bg-white hover:bg-bluebat-500 hover:text-white rounded-full flex gap-2 transition-all w-fit text-bluebg-blue-600"
                 data-aos="zoom-in-up"
                 data-aos-delay="400"
                 data-aos-offset="-300"

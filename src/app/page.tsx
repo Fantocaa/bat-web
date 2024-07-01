@@ -1,9 +1,12 @@
 import Header from "@/components/home/Header";
 import Image from "next/image";
-import type { Metadata } from "next";
 import Services from "@/components/home/Services";
 import WhyChooseUs from "@/components/home/WhyChooseUs";
 import Faq from "@/components/home/Faq";
+import Navbar from "@/components/navigation/navbar";
+import Footer from "@/components/navigation/footer";
+import Cta from "@/components/navigation/cta";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Home | PT. BERLIAN ANUGERAH TRANSPORTASI",
@@ -12,11 +15,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="bg-slate-50">
-      <Header />
-      <Services />
-      <WhyChooseUs />
-      <Faq />
-    </main>
+    <>
+      <Navbar />
+      <main className="bg-slate-50">
+        <Header />
+        <Services />
+        <WhyChooseUs />
+        <Faq />
+      </main>
+      <Cta />
+      <Footer />
+    </>
   );
 }

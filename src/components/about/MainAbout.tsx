@@ -1,16 +1,17 @@
 import Image from "next/image";
 import React from "react";
+import VisiMisi from "./VisiMisi";
 
 export default function MainAbout() {
   return (
     <>
-      <div className="py-16">
+      <div className="mt-16">
         <div className="container">
           <div className="bg-white w-full p-8 rounded-2xl">
             <div className="flex">
-              <div className="w-1/2">
+              <div className="w-full">
                 <h1 className="text-4xl font-semibold pb-4">Who we are? 🤔</h1>
-                <p>
+                <p className="leading-relaxed w-[85%]">
                   PT. BERLIAN ANUGERAH TRANSPORTASI adalah perusahaan logistik
                   terkemuka yang menawarkan beragam layanan pengiriman dengan
                   komitmen untuk memberikan solusi terbaik sesuai kebutuhan
@@ -22,15 +23,18 @@ export default function MainAbout() {
               </div>
               <div className="flex flex-col justify-center w-full items-center">
                 <Image
-                  src="/images/logo/logo bat.png"
+                  src="/images/logo/BAT 2 4.png"
                   alt="logobat"
-                  width={128}
-                  height={128}
+                  width={172}
+                  height={172}
                 />
-                <p>PT. BERLIAN ANUGERAH TRANSPORTASI</p>
+                <h1 className="font-medium text-lg pt-2">
+                  PT. BERLIAN ANUGERAH TRANSPORTASI
+                </h1>
               </div>
             </div>
           </div>
+          <VisiMisi />
         </div>
       </div>
     </>

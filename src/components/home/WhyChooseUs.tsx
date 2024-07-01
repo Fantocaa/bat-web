@@ -16,7 +16,7 @@ export default function WhyChooseUs() {
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-blueaml-400 opacity-90 z-10"></div>
+        <div className="absolute inset-0 bg-bluebat-500 opacity-90 z-10"></div>
         <div className="container py-16 z-10 relative">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center text-white pb-16">
             <div className="font-bold col-span-3">
