@@ -19,12 +19,12 @@ export default function Footer() {
         <div className="container pb-6 pt-16 lg:pt-24">
           <>
             <div className="flex justify-between items-center">
-              <h1 className="text-6xl max-w-2xl leading-tight font-medium">
+              <h1 className="text-5xl max-w-2xl leading-tight font-medium">
                 Let’s Start with us in Shipping your goods!
               </h1>
               <Link href="/contact">
                 <div className="bg-slate-50 rounded-2xl">
-                  <ArrowUpRight size={128} className="text-bluebat-500" />
+                  <ArrowUpRight size={96} className="text-bluebat-500" />
                 </div>
               </Link>
             </div>

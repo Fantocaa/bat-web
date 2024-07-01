@@ -21,7 +21,7 @@ export default function Home() {
         <Header />
         <Services />
         <WhyChooseUs />
-        <Faq />
+        {/* <Faq /> */}
       </main>
       <Cta />
       <Footer />
