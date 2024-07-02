@@ -51,7 +51,7 @@ export default function Cta() {
               </Link>
             </div>
           </div>
-          <div className="bg-bluebat-500 rounded-2xl w-full h-full  p-6 ">
+          <div className="bg-bluebat-500 rounded-2xl w-full h-full lg:hidden p-6 ">
             <h1 className="text-3xl font-semibold leading-tight text-white">
               Contact Us for Logistics Solutions
             </h1>
