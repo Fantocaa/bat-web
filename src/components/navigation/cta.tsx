@@ -7,9 +7,9 @@ import Link from "next/link";
 export default function Cta() {
   return (
     <>
-      <div className="lg:py-24 bg-slate-50">
+      <div className="py-16 lg:py-24 bg-slate-50">
         <div className="container">
-          <div className="relative bg-white w-full h-full text-darkpint p-8 md:p-24 md:py-64  grid md:grid-cols-2 rounded-xl overflow-hidden">
+          <div className="relative bg-white w-full h-full text-darkpint p-8 md:p-24 md:py-64 md:grid-cols-2 rounded-xl overflow-hidden hidden lg:grid">
             <div className="absolute top-0 left-24 z-10">
               <Image
                 src="/images/pngegg (1) 1.png"
@@ -50,6 +50,27 @@ export default function Cta() {
                 </Button>
               </Link>
             </div>
+          </div>
+          <div className="bg-bluebat-500 rounded-2xl w-full h-full  p-6 ">
+            <h1 className="text-3xl font-semibold leading-tight text-white">
+              Contact Us for Logistics Solutions
+            </h1>
+            <p className="py-4 text-white">
+              Jika Anda belum puas dengan FAQ&apos;s kami, Anda bisa hubungi
+              kami dan sampaikan pertanyaan Anda kepada kami.
+            </p>
+            <Link href="/contact">
+              <Button
+                variant="default"
+                className="py-3 mt-4 bg-white hover:bg-bluebat-500 hover:text-white rounded-full flex gap-2 transition-all w-fit text-bluebg-blue-600"
+                data-aos="zoom-in-up"
+                data-aos-delay="400"
+                data-aos-offset="-300"
+              >
+                Contact Us
+                <ArrowRight />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

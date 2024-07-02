@@ -24,7 +24,7 @@ export default function MainAbout() {
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 z-10 relative">
+        <div className="grid lg:grid-cols-2 gap-4 z-10 relative">
           <div className="p-8 bg-white rounded-2xl hover:bg-bluebat-500 hover:text-white transition-all duration-200">
             <Image
               src="/images/Group 11.svg"
