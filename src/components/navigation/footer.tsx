@@ -19,12 +19,15 @@ export default function Footer() {
         <div className="container pb-6 pt-16 lg:pt-24">
           <>
             <div className="flex justify-between items-center">
-              <h1 className="text-5xl max-w-2xl leading-tight font-medium">
+              <h1 className="text-2xl lg:text-5xl max-w-2xl leading-tight font-medium">
                 Let’s Start with us in Shipping your goods!
               </h1>
               <Link href="/contact">
                 <div className="bg-slate-50 rounded-2xl">
-                  <ArrowUpRight size={96} className="text-bluebat-500" />
+                  <ArrowUpRight
+                    size={96}
+                    className="text-bluebat-500 size-16 md:size-32"
+                  />
                 </div>
               </Link>
             </div>
@@ -34,7 +37,7 @@ export default function Footer() {
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
             <div>
               <div className="flex justify-center sm:justify-start">
-                <Link href="/" className="md:flex md:items-center gap-4">
+                <Link href="/" className="flex items-center gap-4 ">
                   <Image
                     src="/images/logo/logo bat.png"
                     alt="logo"
@@ -47,7 +50,7 @@ export default function Footer() {
                 </Link>
               </div>
 
-              <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xl sm:text-left">
+              <p className="mt-6 max-w-md leading-relaxed text-gray-500 sm:max-w-xl sm:text-left">
                 Memiliki jaringan yang kuat dan luas di seluruh wilayah
                 Indonesia membuat kami bisa menjawab semua kebutuhan logistik
                 anda.
@@ -96,10 +99,11 @@ export default function Footer() {
                           d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
                         />
                       </svg>
-
-                      <span className="flex-1 text-gray-700">
-                        marketing@bat.id
-                      </span>
+                      <div className="flex-1">
+                        <span className="flex text-gray-700">
+                          marketing@bat.id
+                        </span>
+                      </div>
                     </div>
                   </li>
 
@@ -128,31 +132,34 @@ export default function Footer() {
                     </div>
                   </li>
 
-                  <li className="flex items-start justify-center gap-4 ltr:sm:justify-start rtl:sm:justify-end">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="size-5 shrink-0 text-gray-900"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                      />
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                      />
-                    </svg>
-
-                    <address className="-mt-0.5 flex-1 not-italic text-gray-700">
-                      Jl. Perak Timur No.110, Perak Timur, Kec. Pabean Cantikan,
-                      Surabaya, Jawa Timur 60164
-                    </address>
+                  <li>
+                    <div className="flex items-start justify-center gap-4 ltr:sm:justify-start rtl:sm:justify-end">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="size-5 shrink-0 text-gray-900"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                      <div className="flex-1">
+                        <span className="flex not-italic text-gray-700 text-left">
+                          Jl. Perak Timur No.110, Perak Timur, Kec. Pabean
+                          Cantikan, Surabaya, Jawa Timur 60164
+                        </span>
+                      </div>
+                    </div>
                   </li>
                 </ul>
               </div>

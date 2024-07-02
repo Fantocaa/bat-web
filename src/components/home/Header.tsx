@@ -18,7 +18,7 @@ export default function Header() {
             </span>
           </h1>
         </div>
-        <div className="max-w-sm">
+        <div className="max-w-sm pt-2 md:pt-0">
           <h1>
             Trust your package to us, we have been trusted by the whole world.
             your package must be safe!

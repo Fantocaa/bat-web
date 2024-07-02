@@ -129,7 +129,7 @@ const Navbar = () => {
                     height={128}
                     className="w-14 h-full"
                   />
-                  <h1 className="font-medium text-sm text-dark">
+                  <h1 className="font-medium text-sm text-dark hidden lg:block">
                     PT. BERLIAN ANUGERAH TRANSPORTASI
                   </h1>
                 </>
@@ -197,7 +197,7 @@ const Navbar = () => {
                   </NavigationMenuItem> */}
                   {/* Menambahkan "Careers" setelah "Location" */}
                   <NavigationMenuItem>
-                    <Button className="bg-white shadow-none hover:bg-slate-50">
+                    <Button className="bg-transparent hover:bg-accent hover:text-accent-foreground shadow-none">
                       <Link
                         href="https://karier.tako.co.id/"
                         // passHref
@@ -250,7 +250,7 @@ const Navbar = () => {
                   <Link className="block text-teal-600" href="/">
                     <span className="sr-only">Home</span>
                     <Image
-                      src="/images/amlwhite.png"
+                      src="/images/logo/logo bat.png"
                       alt="logo"
                       width={64}
                       height={64}
@@ -365,24 +365,28 @@ const Navbar = () => {
 
       <div className="fixed z-50 bottom-10 right-4 md:right-10 2xl:right-24">
         <div className="relative">
-          <button
-            className="rounded-full py-6 px-5 bg-green-500 shadow-xl hover:bg-green-300"
-            onClick={toggleDropdown}
+          <Link
+            href="https://api.whatsapp.com/send?phone=6282143379200"
+            target="__blank"
           >
-            <Image
-              src="/images/call-calling.svg"
-              alt="telp"
-              width={24}
-              height={24}
-              className="mr-2 "
-            />
-          </button>
-          {showDropdown && (
+            <button
+              className="rounded-full py-6 px-5 bg-green-500 shadow-xl hover:bg-green-300"
+              // onClick={toggleDropdown}
+            >
+              <Image
+                src="/images/call-calling.svg"
+                alt="telp"
+                width={24}
+                height={24}
+                className="mr-2 "
+              />
+            </button>
+          </Link>
+          {/* {showDropdown && (
             <div className="absolute bottom-20 right-0 py-2 w-48 bg-white rounded-lg shadow-xl">
               <div className="py-1">
                 <Link href="https://wa.link/j9utdx" target="__blank">
                   <div className="flex items-center hover:bg-gray-200 px-4 py-2 gap-2">
-                    {/* <LucideGlobe /> */}
                     <Image
                       src="icon/wacolor.svg"
                       alt="wa"
@@ -399,7 +403,6 @@ const Navbar = () => {
                   target="__blank"
                 >
                   <div className="flex items-center hover:bg-gray-200 px-4 py-2 gap-2">
-                    {/* <LucideGlobe /> */}
                     <Image
                       src="icon/wacolor.svg"
                       alt="wa"
@@ -413,7 +416,7 @@ const Navbar = () => {
                 </Link>
               </div>
             </div>
-          )}
+          )} */}
         </div>
       </div>
     </>
