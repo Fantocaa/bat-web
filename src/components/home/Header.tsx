@@ -34,7 +34,7 @@ export default function Header() {
       </div>
 
       <Image
-        src="/images/bg-header.png"
+        src="/images/venti-views-FPKnAO-CF6M-unsplash.jpg"
         alt="header"
         width={2000}
         height={2000}

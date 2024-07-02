@@ -6,7 +6,8 @@ export default function Header() {
       <div
         className="relative py-48"
         style={{
-          backgroundImage: "url('/images/header-services.png')",
+          backgroundImage:
+            "url('/images/lucas-van-oort-fBZOVyF-96w-unsplash.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           //   backgroundPositionY: "75%",

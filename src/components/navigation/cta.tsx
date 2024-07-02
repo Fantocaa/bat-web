@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
 import { ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export default function Cta() {
   return (
@@ -36,16 +37,18 @@ export default function Cta() {
                 Jika Anda belum puas dengan FAQ&apos;s kami, Anda bisa hubungi
                 kami dan sampaikan pertanyaan Anda kepada kami.
               </p>
-              <Button
-                variant="default"
-                className="py-3 mt-4 bg-white hover:bg-bluebat-500 hover:text-white rounded-full flex gap-2 transition-all w-fit text-bluebg-blue-600"
-                data-aos="zoom-in-up"
-                data-aos-delay="400"
-                data-aos-offset="-300"
-              >
-                Contact Us
-                <ArrowRight />
-              </Button>
+              <Link href="/contact">
+                <Button
+                  variant="default"
+                  className="py-3 mt-4 bg-white hover:bg-bluebat-500 hover:text-white rounded-full flex gap-2 transition-all w-fit text-bluebg-blue-600"
+                  data-aos="zoom-in-up"
+                  data-aos-delay="400"
+                  data-aos-offset="-300"
+                >
+                  Contact Us
+                  <ArrowRight />
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
