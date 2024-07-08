@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
         }}
       >
         <div className="absolute inset-0 bg-bluebat-500 opacity-90 z-10"></div>
-        <div className="container py-16 z-10 relative">
+        <div className="container py-24 z-10 relative">
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-center text-white pb-8 md:pb-16">
             <div className="font-bold col-span-3">
               <h1 className="text-3xl md:text-5xl z-10 max-w-md">
